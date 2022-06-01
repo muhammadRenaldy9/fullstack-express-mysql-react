@@ -1,0 +1,61 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "alex",
+    "email": "alexboy@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "rahmat",
+    "email": "rahmat@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE  http://localhost:5000/users/2
+
+
+
+
+
+###
+GET http://localhost:5000/admins
+
+###
+GET http://localhost:5000/admins
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJuYW1lIjoibSBhZ3VzIiwiZW1haWwiOiJtYWd1c0BnbWFpbC5jb20iLCJpYXQiOjE2NTI1MjI4MTUsImV4cCI6MTY1MjUyMjgzNX0.risQCbASQz1UsG1Hd_DKbf1u4nu1UmV2dJcCFSsYls4
+
+###
+POST http://localhost:5000/admins
+Content-Type: application/json
+
+{
+    "name": "sulis2",
+    "email": "sulis2@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "magus@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
